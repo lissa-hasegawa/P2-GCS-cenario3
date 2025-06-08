@@ -1,0 +1,23 @@
+:root {
+  --cor-fundo-body: #f6f6f6;
+  --cor-texto: #333;
+
+  --cor-header-bg: #E7E3DD;
+  --cor-header-texto: #fff;
+
+  --cor-link: #333;
+  --cor-link-hover: #620725;
+
+  --cor-intro-bg: #D3A29D;
+  --cor-intro-titulo: #920d2c;
+
+  --cor-produtos-titulo: #eeaeaf;
+
+  --cor-card-bg: #fff;
+  --cor-card-titulo: #703e3b;
+  --cor-card-shadow: rgba(46, 125, 50, 0.08);
+  --cor-card-hover-shadow: rgba(46, 125, 50, 0.16);
+
+  --cor-footer-bg: #E7E3DD;
+  --cor-footer-texto: #920d2c;
+}

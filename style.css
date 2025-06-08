@@ -1,0 +1,155 @@
+@import url(colors.css);
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: var(--cor-fundo-body);
+    color: var(--cor-texto);
+}
+
+header {
+    background: var(--cor-footer-bg);
+    color: var(--cor-card-bg);
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 15px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    color: var(--cor-link-hover);
+}
+
+.intro {
+    padding: 30px 15px;
+    text-align: center;
+    background: var(--cor-intro-bg);
+}
+
+.intro h2 {
+    margin-top: 0;
+    color: var(--cor-intro-titulo);
+    font-size: 1.5rem;
+}
+
+.produtos {
+    padding: 20px 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.produtos h3 {
+    text-align: center;
+    color: var(--cor-produtos-titulo);
+    font-size: 1.3rem;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.produto {
+    background: var(--cor-header-texto);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--cor-card-shadow);
+    padding: 15px;
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+
+.produto:hover {
+    box-shadow: 0 4px 16px var(--cor-card-hover-shadow);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.produto h4 {
+    margin: 10px 0 5px 0;
+    color: var(--cor-card-titulo);
+    font-size: 1rem;
+}
+
+footer {
+    background: var(--cor-footer-bg);
+    color: var(--cor-footer-texto);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    nav {
+        margin-top: 0;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .intro {
+        padding: 40px 20px;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .produtos {
+        padding: 30px 20px;
+    }
+
+    .produtos h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid {
+        gap: 30px;
+    }
+}

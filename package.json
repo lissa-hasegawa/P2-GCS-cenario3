@@ -1,0 +1,15 @@
+{
+  "name": "p2-gcs-cenario2",
+  "version": "1.0.0",
+  "author": "",
+  "main": "index.js",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "description": "Projeto de loja de roupas",
+  "license": "ISC",
+  "scripts": {
+    "dev": "live-server --open=index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

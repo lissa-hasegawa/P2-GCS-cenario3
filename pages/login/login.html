@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Admin - ELA's Club</title>
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    @import url(../../colors.css);
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: var(--cor-fundo-body);
+      color: var(--cor-texto);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-container {
+      max-width: 400px;
+      width: 90%;
+      margin: 40px auto;
+      padding: 30px 20px;
+      background: var(--cor-header-texto);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px var(--cor-card-shadow);
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.5rem;
+      color: var(--cor-card-titulo);
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 18px;
+      border-radius: 6px;
+      border: 1px solid var(--cor-card-shadow);
+      background: var(--cor-fundo-body);
+      color: var(--cor-texto);
+      font-size: 1rem;
+      transition: border-color 0.2s;
+      box-sizing: border-box;
+    }
+
+    .login-container input:focus {
+      border-color: var(--cor-link-hover);
+      outline: none;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: var(--cor-link-hover);
+      color: var(--cor-header-texto);
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+    }
+
+    .login-container button:hover {
+      background-color: var(--cor-card-hover-shadow);
+      transform: scale(1.02);
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: -8px;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      background: var(--cor-footer-bg);
+      color: var(--cor-footer-texto);
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Media Queries para responsividade */
+    @media (min-width: 600px) {
+      .login-container {
+        margin: 80px auto;
+        padding: 40px 30px;
+      }
+
+      .login-container h2 {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .login-container {
+        width: 95%;
+        padding: 25px 15px;
+        margin: 20px auto;
+      }
+
+      .login-container h2 {
+        font-size: 1.3rem;
+      }
+
+      .login-container input,
+      .login-container button {
+        padding: 10px;
+      }
+    }
+
+    @media (max-height: 600px) {
+      .login-container {
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login Administrativo</h2>
+    <input type="email" id="email" placeholder="E-mail">
+    <input type="password" id="password" placeholder="Senha">
+    <div class="error" id="error-message"></div>
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ELA's - Moda Sustentável</p>
+  </footer>
+
+  <script src="login.js"></script>
+</body>
+</html>
