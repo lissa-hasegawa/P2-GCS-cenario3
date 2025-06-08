@@ -1,0 +1,17 @@
+name: CI elas club
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  always-pass:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: CI elas club
+        run: echo "CI passed successfully!"
