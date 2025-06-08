@@ -102,6 +102,15 @@ nav a:hover {
     font-size: 1rem;
 }
 
+.produto a {
+    text-decoration: none;
+    margin: 10px 0 5px 0;
+    color: var(--cor-card-titulo);
+    font-size: 1rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+}
+
 footer {
     background: var(--cor-footer-bg);
     color: var(--cor-footer-texto);
